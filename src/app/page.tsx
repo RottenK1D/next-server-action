@@ -1,4 +1,5 @@
 import { AnimeCard, AnimeProp } from "@/components/AnimeCard";
+import { LoadMore } from "@/components/LoadMore";
 import { data } from "@/db/data";
 
 export default function Home() {
@@ -10,6 +11,7 @@ export default function Home() {
 					<AnimeCard anime={item} index={index} key={item.id} />
 				))}
 			</section>
+			<LoadMore />
 		</main>
 	);
 }
